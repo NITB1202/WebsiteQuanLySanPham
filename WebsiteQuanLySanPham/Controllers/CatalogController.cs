@@ -15,7 +15,7 @@ namespace WebsiteQuanLySanPham.Controllers
             string connection = "Server=localhost;Database=QuanLySanPham;Integrated Security=True;";
             QuanLySanPhamDataContext context = new QuanLySanPhamDataContext(connection);
             List<Catalog> dsCatalog = context.Catalogs.ToList();
-            return View(dsCatalog); ;
+            return View(dsCatalog);
         }
     }
 }
